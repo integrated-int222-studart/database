@@ -54,7 +54,7 @@ ENGINE = InnoDB;
 -- Table `Studart_System`.`products`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Studart_System`.`products` (
-  `prodID` INT NOT NULL,
+  `prodID` INT NOT NULL AUTO_INCREMENT,
   `prodName` VARCHAR(50) NOT NULL,
   `manufacDate` DATE NOT NULL,
   `prodDescription` VARCHAR(200) NULL,
