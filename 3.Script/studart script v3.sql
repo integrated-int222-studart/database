@@ -106,7 +106,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `Studart_System`.`admins` (
   `adminID` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(50) NULL,
-  `password` VARCHAR(200) NULL,
+  `password` VARCHAR(255) NULL,
   PRIMARY KEY (`adminID`),
   UNIQUE INDEX `AdminID_UNIQUE` (`adminID` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -189,7 +189,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Studart_System`.`userTokens` (
   `tokensID` INT NOT NULL AUTO_INCREMENT,
-  `token` VARCHAR(100) NOT NULL,
+  `token` VARCHAR(255) NOT NULL,
   `userID` INT NOT NULL,
   PRIMARY KEY (`tokensID`),
   UNIQUE INDEX `TokensID_UNIQUE` (`tokensID` ASC) VISIBLE,
@@ -207,7 +207,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Studart_System`.`adminTokens` (
   `tokensID` INT NOT NULL AUTO_INCREMENT,
-  `token` VARCHAR(100) NOT NULL,
+  `token` VARCHAR(255) NOT NULL,
   `adminID` INT NOT NULL,
   PRIMARY KEY (`tokensID`),
   UNIQUE INDEX `TokensID_UNIQUE` (`tokensID` ASC) VISIBLE,
