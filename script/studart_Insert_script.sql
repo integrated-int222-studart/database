@@ -39,5 +39,5 @@ insert into Studart_System.styles (styleID,styleName)values(29,'Commercial');
 insert into Studart_System.styles (styleID,styleName)values(30,'Drone');
 insert into Studart_System.styles (styleID,styleName)values(31,'Lifestyle');
 
-insert into studart_system.admins values(1,"admin@example.com","$2a$08$Kca5SI0f2xHbkEsLCA.CquL48NwmKm5l1.6hOwnKJyoIPKV49BKJu")
+insert into Studart_System.admins values(1,'admin@example.com','$2a$08$Kca5SI0f2xHbkEsLCA.CquL48NwmKm5l1.6hOwnKJyoIPKV49BKJu');
 
